@@ -1,0 +1,13 @@
+<form action="stocks" method="get">
+  <label for="data">FIRST SYMBOL</label>
+  <input type="text" name="data" placeholder="FIRST">
+  <input type="submit">
+
+</form>
+
+
+<%if @result %>
+
+<p>the latest stock quote for <%= @result.name %> is <%= @result.ask%> and the high today is <%=@result.dayHigh%></p>
+
+<% end %>

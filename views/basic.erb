@@ -1,0 +1,14 @@
+<!-- When you fire this form it will send a get request to '/' with the relevant date in the params hash -->
+<form action="/basic" method="get">
+  <label for="first">FIRST NUMBER</label>
+  <input type="text" name="first" placeholder="Enter the first number">
+  <label for="operator">OPERATOR</label>
+  <input type="text" name='operator' placeholder="Enter the operator">
+  <label for="second">SECOND NUMBER</label>
+  <input type="text" name='second' placeholder="Enter the second number">
+  <input type="submit">
+</form>
+
+<% if @result %>
+<p>the result of <%= @first%> <%= @operator%> <%= @second%> is: <%= @result%></p>
+<% end %>

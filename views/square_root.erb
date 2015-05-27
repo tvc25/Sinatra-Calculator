@@ -1,0 +1,10 @@
+<!-- When you fire this form it will send a get request to '/' with the relevant date in the params hash -->
+<form action="/square_root" method="get">
+  <label for="first">FIRST NUMBER</label>
+  <input type="text" name="first" placeholder="Enter the first number">
+  <input type="submit">
+</form>
+
+<%if @result_square > 0.0 %>
+<p>the square root of <%= @first%> is: <%= @result_square%></p>
+<% end %>

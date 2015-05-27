@@ -1,0 +1,12 @@
+<!-- When you fire this form it will send a get request to '/' with the relevant date in the params hash -->
+<form action="/bmi" method="get">
+  <label for="weight">WEIGHT KG</label>
+  <input type="text" name="weight" placeholder="Enter your weight in kg:">
+  <label for="height">HEIGHT IN METRES</label>
+  <input type="text" name='height' placeholder="Enter your height in m:">
+  <input type="submit">
+</form>
+
+<% if @result_bmi > 0.0 %>
+<p>Your BMI is <%= @result_bmi%></p>
+<% end %>

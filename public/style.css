@@ -1,0 +1,57 @@
+li {
+    display: inline-block;
+    padding: 1%;
+    border: 1px dotted white;
+}
+
+form {
+  text-decoration: none;
+  font-family: 'Menlo';
+  color: white;
+  padding: 2%;
+}
+
+nav {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Menlo';
+  color: white;
+}
+
+p {
+    text-decoration: none;
+    font-family: 'Menlo';
+    color: white;
+    text-align: center;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: black;
+}
+
+ h1{
+  font-family: 'Menlo';
+  color: white;
+  text-align: center;
+  padding: 2%;
+ }
+
+ body {
+  background: grey;
+ }
+
+ footer {
+  margin-top: 45%;
+  text-align: center;
+ }
+
+ form {
+  text-align: center;
+ }

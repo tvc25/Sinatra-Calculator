@@ -1,0 +1,12 @@
+<!-- When you fire this form it will send a get request to '/' with the relevant date in the params hash -->
+<form action="/power" method="get">
+  <label for="first">FIRST NUMBER</label>
+  <input type="text" name="first" placeholder="Enter the first number">
+  <label for="second">SECOND NUMBER</label>
+  <input type="text" name='second' placeholder="Enter the second number">
+  <input type="submit">
+</form>
+
+<% if @result_power%>
+<p>the result of <%= @first%> to the power of <%= @second%> is: <%= @result_power%></p>
+<% end %>

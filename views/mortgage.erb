@@ -1,0 +1,13 @@
+<form action="/mortgage" method='get'>
+  <label for="principal">PRINCIPAL</label>
+  <input type="text" name="principal" placeholder="Enter your principal">
+  <label for="interest">INTEREST</label>
+  <input type="text" name="interest" placeholder="Enter yearly interest">
+  <label for="payment_number">PAYMENTS</label>
+  <input type="text" name="payment_number" placeholder="Enter number of payments">
+  <input type="submit">
+</form>
+
+<% if @monthly_payment > 0 %>
+<p>YOUR MONTHLY MORTGAGE PAYMENTS WILL BE £<%= @monthly_payment %></p>
+<% end %>
